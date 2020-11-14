@@ -24,6 +24,6 @@ from apps.users.views import LoginView
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
-    path('', TemplateView.as_view(template_name="index.html")),
+    path('', TemplateView.as_view(template_name="index.html"), name="index"),
     path('login/', LoginView.as_view(), name="login")
 ]
